@@ -53,6 +53,7 @@ Ora la tua versione di Comune a Domicilio sarà agganciata al tuo nuovo Foglio s
 Inserisci il nome del tuo progetto nel file:
 ```src/constants.js```
 nella chiave "APP_NAME".
+
 Inoltre potrai inserire anche una *tua* Privacy Policy, sostituendola al "#" alla chiave "PRIVACY_POLICY_URL"
 
 ## 🚀 Mettere online il tuo progetto
