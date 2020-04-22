@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.App {
+  max-width: 768px;
+  margin: 150px auto 0;
+}
+
+.btn {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.94;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn {
+    margin-right: 35px;
+    &.btn-gray {
+      color: #a3a8aa;
+    }
+    &.btn-primary {
+      color: #0c9edd;
+    }
+  }
+}
+
+.categories {
+  margin-top: 50px;
+  width: 100%;
+  .category {
+    margin-bottom: 10px;
+
+    .list_item {
+      box-shadow: inset 0 -1px 0 0 #ecf1f2;
+      padding: 24px 0;
+      .meta {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+          margin-left: 20px;
+        }
+      }
+      .text {
+        margin-top: 17px;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 300ms ease;
+      }
+      .switcher {
+        outline: none;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.79;
+        letter-spacing: normal;
+        color: #0c9edd;
+        font-family: 'Open Sans', 'sans-serif';
+        text-decoration: underline;
+
+        &:before {
+          content: '';
+          width: 18px;
+          height: 18px;
+          background-image: url("./assets/icons/chevron.svg");
+          display: inline-block;
+          vertical-align: middle;
+          background-size: contain;
+          background-position: center;
+          margin-right: 4px;
+          transform: rotate(180deg);
+          transition: transform 200ms ease;
+        }
+      }
+      &.open {
+        .text {
+          max-height: 700px;
+          overflow-y: auto;
+        }
+        .switcher {
+          &:before {
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  }
+}
+/* Layout */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mobile-only {
+  display: none;
+}
+.MuiButton-label {
+  text-transform: initial !important;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.MuiButton-containedSecondary {
+  box-shadow: none !important;
+}
+
+/* Typography */
+
+.MuiButton-containedPrimary {
+  box-shadow: none !important;
+  text-transform: initial !important;
+  border-radius: 6px !important;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+.MuiInputBase-input {
+  font-family: 'WorkSans', sans-serif !important;
+
+}
+
+h1 {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171818; text-transform: capitalize;
+}
+
+h2 {
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 20px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #171818; text-transform: capitalize;
+}
+pre {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #353f43;
+  font-family: 'Open Sans', 'sans-serif';
+  word-break: break-word;
+  white-space: pre-line;
+}
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.App-header {
+  width: 100%;
+  padding: 18px 0;
+  background-color: white;
+  z-index: 100;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .logo {
+      width: 168px;
+      height: 40px;
+      object-fit: contain;
+    }
+    p {
+      margin: 20px auto;
+      font-size: 18px;
+      text-align: center;
+    }
+    .search {
+      width: 486px;
+    }
+  }
+}
+
+/* Home */
+
+.Home {
+  padding: 0 0 59px;
+
+  .container {
+    & > .content {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 282px;
+      .add {
+        width: 100%;
+        margin-top: 16px;
+        border: solid 1px #d4dde0;
+        background-color: #fafeff;
+        color: #0c9edd;
+      }
+    }
+
+    .page-content {
+      margin-left: 24px;
+      width: calc(100% - 300px);
+      .empty-state {
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+      }
+    }
+  }
+}
+/* Footer */
+
+.App-footer {
+  padding: 38px 0;
+  background-color: white;
+  width: 100%;
+  height: 10px;
+  box-shadow: inset 0 1px 0 0 rgba(163, 168, 170, 0.5);
+  text-align: center;
+
+  p {
+    margin: auto;
+    opacity: 0.8;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.07;
+    letter-spacing: normal;
+    text-align: center;
+    color: #353f43;
+
+    a {
+      color: #353f43;
+    }
+
+  }
+}
+
+
+/* Contact Item */
+.ContactItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: inset 0 -1px 0 0 #ecf1f2;
+  padding: 8px 0;
+  span {
+    max-width: 171px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* About */
+
+.About {
+  padding: 40px 0 92px;
+  .App-header {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      .MuiButton-containedSecondary {
+        color: #ffffff !important;
+      }
+
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    .content {
+      max-width: 588px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5em;
+      letter-spacing: normal;
+      color: #353f43;
+
+    }
+
+    .buttons {
+      margin-left: 24px;
+      margin-top: 50px;
+      .InfoButton {
+        margin-bottom: 14px;
+
+      }
+    }
+  }
+}
+
+/* Media Query */
+
+@media(max-width: 1024px) {
+  .mobile-only {
+    display: block;
+  }
+  h3 {
+    font-size: 17px;
+  }
+  .container {
+    width: calc(100% - 32px);
+  }
+  .App {
+    margin-top: 68px;
+  }
+  .App-header {
+    padding: 19px 0;
+    width: 100%;
+    .container {
+      .main-logo {
+        display: none;
+      }
+      .logo.mobile-only {
+        width: 178px;
+        height: 24px;
+        display: block;
+      }
+      .first {
+        height: initial;
+      }
+      .info-button {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        opacity: 1;
+        min-width: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        &.info-button:after {
+          content: '';
+          background-image: url("assets/icons/info.svg");
+          width: 24px;
+          height: 24px;
+          background-position: center;
+          background-size: contain;
+        }
+        span {
+          display: none;
+        }
+
+      }
+    }
+    .search {
+      display: none;
+    }
+  }
+
+  .Home {
+    padding: 16px 0;
+    .container {
+
+      & > .filters {
+        display: flex;
+        align-items: center;
+        .search {
+          width: calc(100% - 66px);
+        }
+        .open-filter {
+          width: 50px;
+          height: 56px;
+          border-radius: 6px;
+          background-color: #3cc59a;
+          margin-left: 16px;
+          box-shadow: none;
+
+        }
+      }
+      & > .content {
+        flex-direction: column-reverse;
+
+      }
+      .page-content {
+        width: 100%;
+        margin: 10px 0;
+        .Category .items {
+          flex-wrap: nowrap;
+          overflow-y: auto;
+          .CategoryItem {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .sidebar {
+        display: none;
+      }
+    }
+  }
+
+
+
+
+  .About {
+    .App-header {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+        .MuiButton-containedSecondary {
+          background-color: transparent;
+          box-shadow: none;
+        }
+
+        .mobile-buttons {
+          .info-button {
+            display: none;
+          }
+        }
+      }
+    }
+    .container {
+      flex-direction: column;
+      .content {
+        width: 100%;
+        max-width: initial;
+        margin-top: -30px;
+      }
+      .buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        .InfoButton {
+          margin: 30px 10px;
+
+        }
+      }
+    }
+  }
+
+
+  footer.App-footer {
+    padding: 16px 0 35px;
+
+  }
+
+}
