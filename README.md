@@ -16,7 +16,7 @@ L’iniziativa è completamente gratuita e senza alcun fine economico, commercia
 Per prima cosa clona il progetto con questo comando sul terminale:
 ```git clone https://github.com/FiumicinoApp/opensource-comune-a-domicilio.git```
 
-Ora hai bisogno di installare **NPM**, trovi tutte le informazioni qui: (https://www.npmjs.com/).
+Ora hai bisogno di installare **NODE**, trovi tutte le informazioni qui: (https://nodejs.org/it/download/).
 
 Adesso devi installare le *dipendenze node* lanciando questo comando dalla cartella di progetto:
 ``npm i``
