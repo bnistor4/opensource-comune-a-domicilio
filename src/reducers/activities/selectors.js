@@ -4,11 +4,7 @@ import {createSelector} from "reselect";
 export const activitiesList = state => state.activities.list;
 export const searchKey = state => state.activities.search;
 
-export const activitiesEnabled = createSelector([activitiesList], (list) => {
-    return Object.values(list).filter(i => i.status);
-});
-
-export const activitiesFiltered = createSelector([activitiesEnabled, searchKey], (list, searchKey, filters, seed) => {
+export const activitiesFiltered = createSelector([activitiesList, searchKey], (list, searchKey) => {
     let activities = Object.values(list);
     let search = searchKey || "";
     let filtered = activities;

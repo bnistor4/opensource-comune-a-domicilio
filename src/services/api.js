@@ -1,5 +1,5 @@
 import axios from "axios";
-import {ACTIVITIES_URL} from "../constants";
+import {ID_GOOGLE_SPREADSHEET} from "../constants";
 
 export const METHODS = Object.freeze({
     POST: "POST",
@@ -15,7 +15,7 @@ export class Api {
     }
 
     getActivities() {
-        return this.fireCall(METHODS.GET, ACTIVITIES_URL);
+        return this.fireCall(METHODS.GET, `https://spreadsheets.google.com/feeds/cells/${ID_GOOGLE_SPREADSHEET}/1/public/full?alt=json`);
     }
 
 

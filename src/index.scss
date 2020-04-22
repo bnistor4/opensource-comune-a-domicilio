@@ -89,7 +89,7 @@ code {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 0.94;
+  line-height: 1.4;
   letter-spacing: normal;
   text-align: center;
   text-decoration: none;
@@ -133,7 +133,8 @@ code {
       text-align: center;
     }
     .search {
-      width: 486px;
+      max-width: 486px;
+      width: 100%;
     }
   }
 }
@@ -338,89 +339,16 @@ code {
     margin-top: 68px;
   }
   .App-header {
-    padding: 19px 0;
-    width: 100%;
     .container {
-      .logo.mobile-only {
-        width: 178px;
-        height: 24px;
-        display: block;
+      .main-logo {
+        font-size: 25px;
       }
-      .first {
-        height: initial;
-      }
-      .info-button {
-        width: 24px;
-        height: 24px;
-        object-fit: contain;
-        opacity: 1;
-        min-width: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-        &.info-button:after {
-          content: '';
-          background-image: url("assets/icons/info.svg");
-          width: 24px;
-          height: 24px;
-          background-position: center;
-          background-size: contain;
-        }
-        span {
-          display: none;
-        }
-
-      }
-    }
-    .search {
-      display: none;
     }
   }
 
   .Home {
     padding: 16px 0;
-    .container {
-
-      & > .filters {
-        display: flex;
-        align-items: center;
-        .search {
-          width: calc(100% - 66px);
-        }
-        .open-filter {
-          width: 50px;
-          height: 56px;
-          border-radius: 6px;
-          background-color: #3cc59a;
-          margin-left: 16px;
-          box-shadow: none;
-
-        }
-      }
-      & > .content {
-        flex-direction: column-reverse;
-
-      }
-      .page-content {
-        width: 100%;
-        margin: 10px 0;
-        .Category .items {
-          flex-wrap: nowrap;
-          overflow-y: auto;
-          .CategoryItem {
-            margin-bottom: 20px;
-          }
-        }
-      }
-      .sidebar {
-        display: none;
-      }
-    }
   }
-
-
-
 
   .About {
     .App-header {
@@ -444,7 +372,7 @@ code {
       .content {
         width: 100%;
         max-width: initial;
-        margin-top: -30px;
+        margin-top: 40px;
       }
       .buttons {
         width: 100%;

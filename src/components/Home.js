@@ -18,6 +18,8 @@ class Home extends Component {
     }
 
     render() {
+
+        console.log(this.props);
         return (
             <div>
                 <Header button_title={"Info sul progetto"} button_action={() => history.push("/info")}>

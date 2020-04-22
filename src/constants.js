@@ -1,4 +1,4 @@
-export const ACTIVITIES_URL = "https://spreadsheets.google.com/feeds/cells/1QrnwPjyaVAsAvVNF_1SLjjA4iQWX5C8z8-BcUPxbU-E/1/public/full?alt=json";
+export const ID_GOOGLE_SPREADSHEET = "1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg";
 export const ADD_ACTIVITY_URL = "https://bit.ly/fiumicinodomicilio";
 export const PRIVACY_POLICY_URL = "https://www.iubenda.com/privacy-policy/14777174";
 export const VERSION = "v0.0.1";

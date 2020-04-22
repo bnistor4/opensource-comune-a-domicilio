@@ -80,22 +80,6 @@ function parseActivity(data) {
             description: getRowValue(row, 7),
             website: getRowValue(row, 8),
             facebook: getRowValue(row, 9),
-            instagram: getRowValue(row, 10),
-            open: getRowValue(row, 11, 'bool'),
-            opening_days: getRowValue(row, 12, 'array'),
-            opening_hours: getRowValue(row, 13),
-            delivery: {
-                enabled: getRowValue(row, 14, 'bool'),
-                location: getRowValue(row, 15, 'array'),
-                hours: getRowValue(row, 16),
-                shipment_price: getRowValue(row, 17),
-                minimum_order: getRowValue(row, 18),
-                payment_method: getRowValue(row, 19),
-                booking_preference: getRowValue(row, 22),
-            },
-            tag: getRowValue(row, 20, 'array'),
-            picture: getRowValue(row, 23),
-            status: getRowValue(row, 26) === 'OK',
         };
     });
     function getRowValue(row, id, output) {
