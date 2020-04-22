@@ -7,14 +7,15 @@ import SearchBox from "./SearchBox";
 import history from "../history";
 import {Category} from "./Category";
 import {ADD_ACTIVITY_URL} from "../constants";
-
+import {
+    Link
+} from "react-router-dom";
 
 class Home extends Component {
 
     componentDidMount() {
         this.props.getActivities();
     }
-
 
     render() {
         return (
@@ -25,7 +26,9 @@ class Home extends Component {
                 <div className="Home">
                     <div className="container">
                         <nav className="buttons">
-                            <button className="btn btn-gray" href="/iniziativa">A proposito dell'iniziativa</button>
+                            <Link to={'info'}>
+                                <button className="btn btn-gray">A proposito dell'iniziativa</button>
+                            </Link>
                             <a className="btn btn-primary" target="_blank" rel='noopener noreferrer' href={ADD_ACTIVITY_URL}>Aggiungi un'attività</a>
                         </nav>
                         <div className={'content'}>

@@ -5,6 +5,7 @@ import {ConnectedRouter} from "connected-react-router";
 import {APP_NAME, PRIVACY_POLICY_URL, VERSION} from "../constants";
 import ScrollToTopRoute from "./ScrollToTopRoute";
 import Home from "./Home";
+import {About} from "./About";
 
 export default class App extends Component {
 
@@ -15,7 +16,7 @@ export default class App extends Component {
             <Router history={this.props.history}>
               <div className="App">
                 <Switch>
-                  {/*<ScrollToTopRoute path="/info" component={About} />*/}
+                  <ScrollToTopRoute path="/info" component={About} />
                   <ScrollToTopRoute path="/" component={Home} />
                 </Switch>
 
