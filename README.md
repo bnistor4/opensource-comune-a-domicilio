@@ -16,7 +16,7 @@ L’iniziativa è completamente gratuita e senza alcun fine economico, commercia
 Per prima cosa clona questo progetto con questo comando:
 ```git clone https://github.com/FiumicinoApp/opensource-comune-a-domicilio.git```
 
-Ora hai bisogno di installare **NPM**, trovi tutte le informazioni [qui](https://www.npmjs.com/).
+Ora hai bisogno di installare **NPM**, trovi tutte le informazioni qui: (https://www.npmjs.com/).
 
 Adesso devi installare le *dipendenze node* lanciando questo comando dalla cartella di progetto:
 ``npm i``
@@ -29,7 +29,7 @@ Ecco fatto! Ora potrai vedere la tua versione di Comune a Domicilio a questo ind
 
 ## ✍🏼 Come inserire le attività
 
-Per inserire le attività all'interno di Comune a Domicilio crea un nuovo foglio SpreadSheet sulla identico a [questo].(https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0)
+Per inserire le attività all'interno di Comune a Domicilio crea un nuovo foglio SpreadSheet sulla identico a questo:(https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0)
 
 Dopodiché clicca sul tasto condividi in alto a destra, premi "Avanzate" e in "Chi ha accesso" Seleziona "Attivo - Pubblico sul Web".
 
