@@ -196,10 +196,11 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    .logo {
-      width: 168px;
-      height: 40px;
-      object-fit: contain;
+    .main-logo {
+      font-size: 30px;
+      font-family: 'Ubuntu', 'sans-serif';
+      font-weight: bolder;
+      color: #0e9edd;
     }
     p {
       margin: 20px auto;
@@ -350,9 +351,6 @@ p {
     padding: 19px 0;
     width: 100%;
     .container {
-      .main-logo {
-        display: none;
-      }
       .logo.mobile-only {
         width: 178px;
         height: 24px;

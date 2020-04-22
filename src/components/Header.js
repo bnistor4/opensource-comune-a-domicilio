@@ -7,7 +7,7 @@ export const Header = ({children}) => {
     return (
         <header className="App-header">
             <div className="container">
-                    <Link className={'main-logo'} to="/"><img alt={APP_NAME} className={'logo'} src={logo}/></Link>
+                    <Link className={'main-logo'} to="/">{APP_NAME}</Link>
                     <p>
                         Registrazione gratuita per sempre.<br/>
                         Aiutiamoci in questo momento di difficoltà :)
