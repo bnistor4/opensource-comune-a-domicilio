@@ -29,7 +29,7 @@ Ecco fatto! Ora potrai vedere la tua versione di Comune a Domicilio a questo ind
 
 ## ✍🏼 Come inserire le attività
 
-Per inserire le attività all'interno di Comune a Domicilio crea un nuovo foglio SpreadSheet sulla identico a questo:(https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0)
+Per inserire le attività all'interno di Comune a Domicilio crea un nuovo foglio SpreadSheet identico a questo:(https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0)
 
 Dopodiché clicca sul tasto condividi in alto a destra, premi "Avanzate" e in "Chi ha accesso" Seleziona "Attivo - Pubblico sul Web".
 
