@@ -13,7 +13,7 @@ L’iniziativa è completamente gratuita e senza alcun fine economico, commercia
 
 ## 🔎 Come replicare il progetto
 
-Per prima cosa clona il progetto con questo comando:
+Per prima cosa clona il progetto con questo comando sul terminale:
 ```git clone https://github.com/FiumicinoApp/opensource-comune-a-domicilio.git```
 
 Ora hai bisogno di installare **NPM**, trovi tutte le informazioni qui: (https://www.npmjs.com/).
