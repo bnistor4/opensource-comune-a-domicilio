@@ -36,8 +36,8 @@ Dopodiché clicca sul tasto condividi in alto a destra, premi "Avanzate" e in "C
 Fatto questo clicca su "File > Pubblica sul web", seleziona "Foglio 1" e "Pagina Web" e premi pubblica.
 
 Ora copia l'url del tuo foglio spreadsheet, sarà tipo questo:
-
 ```https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0```
+
 Dovrai prendere il codice compreso tra /d/ e /edit, nel nostro caso:
 ```1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg```
 
