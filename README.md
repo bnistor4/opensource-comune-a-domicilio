@@ -55,7 +55,7 @@ Inserisci il nome del tuo progetto nel file:
 nella chiave "APP_NAME".
 Inoltre potrai inserire anche una *tua* Privacy Policy, sostituendola al "#" alla chiave "PRIVACY_POLICY_URL"
 
-##  🚀Mettere online il tuo progetto
+## 🚀 Mettere online il tuo progetto
 
 Per mettere online il tuo progetto, lancia il comando 
 ```npm run build```
