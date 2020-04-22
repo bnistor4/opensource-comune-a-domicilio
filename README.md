@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+👋  Siamo un gruppo di ragazzi che vivono a Fiumicino e che hanno a cuore la propria città.
 
-## Available Scripts
+Durante il periodo Covid-19 ad inizio 2020 abbiamo voluto realizzare il portale fiumicinoadomicilio.it, che offre alle attività produttive ancora aperte del nostro Comune di poter continuare a lavorare, offrendo prodotti e servizi a tutti noi che dobbiamo restare a casa. Abbiamo voluto dare il nostro piccolo contributo a supporto della comunità.
 
-In the project directory, you can run:
+Data la grande risposta da parte di attività e cittadini anche di altri comuni, abbiamo deciso di rendere il progetto OpenSource.
 
-### `npm start`
+L’iniziativa è completamente gratuita e senza alcun fine economico, commerciale, politico o di qualsiasi altro tipo.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+📣  Aiutaci a diffondere il progetto, condividi con chi puoi! Grazie per il tuo prezioso contributo.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+👉  Il team di Fiumicino App
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🔎 Come replicare il progetto
 
-### `npm run build`
+Per prima cosa clona questo progetto con questo comando:
+```git clone https://github.com/FiumicinoApp/opensource-comune-a-domicilio.git```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ora hai bisogno di installare **NPM**, trovi tutte le informazioni [qui](https://www.npmjs.com/).
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Adesso devi installare le *dipendenze node* lanciando questo comando dalla cartella di progetto:
+``npm i``
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Per visionare il progetto sul tuo computer, lancia questo comando:
+```npm run start```
 
-### `npm run eject`
+Ecco fatto! Ora potrai vedere la tua versione di Comune a Domicilio a questo indirizzo:
+```http://localhost:3000```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## ✍🏼 Come inserire le attività
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Per inserire le attività all'interno di Comune a Domicilio crea un nuovo foglio SpreadSheet sulla identico a [questo].(https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Dopodiché clicca sul tasto condividi in alto a destra, premi "Avanzate" e in "Chi ha accesso" Seleziona "Attivo - Pubblico sul Web".
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Fatto questo clicca su "File > Pubblica sul web", seleziona "Foglio 1" e "Pagina Web" e premi pubblica.
 
-## Learn More
+Ora copia l'url del tuo foglio spreadsheet, sarà tipo questo:
+```https://docs.google.com/spreadsheets/d/1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg/edit#gid=0```
+Dovrai prendere il codice compreso tra /d/ e /edit, nel nostro caso:
+```1ORBU2WqDBQvwZsNO2U9QobzbyvgQ48odu1knZ4O2Wkg```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Ora incolla questo codice nel tuo progetto, nel file:
+```src/constants.js```
+nella voce "ID_GOOGLE_SPREADSHEET".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Ora la tua versione di Comune a Domicilio sarà agganciata al tuo nuovo Foglio spreadsheet.
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## ✨Come personalizzare la tua versione di Comune a Domicilio
 
-### Analyzing the Bundle Size
+Inserisci il nome del tuo progetto nel file:
+```src/constants.js```
+nella chiave "APP_NAME".
+Inoltre potrai inserire anche una *tua* Privacy Policy, sostituendola al "#" alla chiave "PRIVACY_POLICY_URL"
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+##  🚀Mettere online il tuo progetto
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Per mettere online il tuo progetto, lancia il comando 
+```npm run build```
+e carica il contenuto della nuova cartella "build" su un hosting a tuo piacimento 😁
