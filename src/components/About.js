@@ -17,7 +17,7 @@
 
                     <div className={'content'}>
                         <p>
-                            👋 Sono Bogdan, ho implementato il progetto dei ragazzi del team di Fiumicino App per il comune di Ladispoli.
+                            👋 Sono Bogdan Nistor, ho implementato il progetto dei ragazzi del team di Fiumicino App per il comune di Ladispoli.
                             <p> 👏🏻 Rigrazio i ragazzi per il grande lavoro fatto e spero possa essere utile a tutte le persone che useranno il sito ed alle attività locali.</p>
                             Qui sotto trovate il messaggio originale dei ragazzi.
 
