@@ -32,7 +32,9 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
                Website: {website}
                Apertura: {open}
                Consegna a domicilio: {delivery}
+               <p>
                {description}
+               </p>
             </pre>
             <br />
          </div>
