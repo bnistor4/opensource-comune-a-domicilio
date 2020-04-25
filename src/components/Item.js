@@ -19,7 +19,7 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          <div className="flex justify-between items-center">
             <h2>{name}</h2>
             <div className="meta">
-               <a href={website} target="_blank" rel="noopener noreferrer"><img alt="" className="icon" src={iconWeb} /></a>
+               <a href={website} target="_blank" rel="noopener noreferrer"><img alt="" className="icon" src={iconWeb}/></a>
                <a href={`mailto:${email}`}><img alt="" className="icon" src={iconMail} /></a>
                <a href={`tel:${phone}`}><img alt="" className="icon" src={iconPhone} /></a>
             </div>
