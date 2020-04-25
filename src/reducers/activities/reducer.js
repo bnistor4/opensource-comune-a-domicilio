@@ -84,6 +84,7 @@ function parseActivity(data) {
             delivery: getRowValue(row, 11),
         };
     });
+    
     function getRowValue(row, id, output) {
         if(row[id]) {
             let value = row[id];
