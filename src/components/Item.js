@@ -28,9 +28,12 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          <div className="text">
             <pre>
                <p>🏠 Indirizzo: {address} - {location}</p>
-               <p>{phoneCheck} {emailCheck} {websiteCheck}</p>
-               <p>{openTime}</p>
+               <p> {phone != null ? "📞 Telefono: " + phone : ''} </p>
+               <p> {website != null ? "🌐 Website: " + website : ''}</p>
+               <p> {email != null ? "📧 Email: " + email : ''}</p>
+               <p> {openTime != null ? "⏱️ Orari Apertura: " + openTime : ''}</p>
                <p><strong>🚚 Consegna a domicilio:</strong> {homeDelivery}</p>
+               <hr></hr>
                <p>
                   {description}
                </p>
@@ -41,22 +44,5 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          <button onClick={handleClick} className="switcher">{open ? 'Chiudi la descrizione' : 'Leggi la descrizione'}</button>
       </div>
    );
-
-   function websiteCheck() {
-      return website != null ? `Website: ${website}` : '';
-   }
-
-   function emailCheck() {
-      return email != null ? `Email: ${email}` : '';
-   }
-
-   function phoneCheck() {
-      return phone != null ? `Telefono: ${phone}` : '';
-   }
-
-   function openTime() {
-      return open != null ? `⏱️ Apertura: ${open}` : '';
-   }
-
 };
 

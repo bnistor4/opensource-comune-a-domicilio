@@ -31,7 +31,7 @@ class Home extends Component {
                             <Link to={'info'}>
                                 <button className="btn btn-gray">A proposito dell'iniziativa</button>
                             </Link>
-                            <a className="btn btn-primary" target="_blank" rel='noopener noreferrer' href={ADD_ACTIVITY_URL}>Aggiungi un'attività</a>
+                            <a className="btn btn-primary" target="_blank" rel='noopener noreferrer' href={ADD_ACTIVITY_URL}>✔️ Aggiungi un'attività</a>
                         </nav>
                         <div className={'content'}>
                             <div className={"categories"}>
