@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import iconWeb from '../assets/icons/web.svg';
 import iconMail from '../assets/icons/mail.svg';
 import iconPhone from '../assets/icons/phone.svg';
+import {emailCheck, websiteCheck } from '../components/checkExist.js';
+import { func } from "prop-types";
 
 export const ListItem = ({ name, location, address, phone, website, email, description, openTime, homeDelivery }) => {
    const [open, setOpen] = useState(false);
@@ -27,13 +29,11 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          <div className="text">
             <pre>
                Indirizzo: {address} , {location}
-               Telefono: {phone}
-               Email: {email}
-               Website: {website}
-               Apertura: {open}
-               Consegna a domicilio: {homeDelivery}
+               Telefono: {phone} {emailCheck} {websiteCheck}
+               <p>⏱️ Apertura: {open}</p>
+               <p><bold>🚚 Consegna a domicilio:</bold> {homeDelivery}</p>
                <p>
-               {description}
+                  {description}
                </p>
             </pre>
             <br />
