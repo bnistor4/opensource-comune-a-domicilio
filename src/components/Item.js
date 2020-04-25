@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import iconWeb from '../assets/icons/web.svg';
 import iconMail from '../assets/icons/mail.svg';
 import iconPhone from '../assets/icons/phone.svg';
-import {emailCheck, websiteCheck } from '../components/checkExist.js';
 import { func } from "prop-types";
 
 export const ListItem = ({ name, location, address, phone, website, email, description, openTime, homeDelivery }) => {
@@ -40,7 +39,14 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          </div>
 
          <button onClick={handleClick} className="switcher">{open ? 'Chiudi la descrizione' : 'Leggi la descrizione'}</button>
-
       </div>
    );
 };
+
+function websiteCheck() {
+   return website != null ? `Website: ${website}` : '';
+}
+
+function emailCheck() {
+   return email != null ? `Email: ${email}` : '';
+}
