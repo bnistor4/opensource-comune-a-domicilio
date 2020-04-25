@@ -3,7 +3,7 @@ import iconWeb from '../assets/icons/web.svg';
 import iconMail from '../assets/icons/mail.svg';
 import iconPhone from '../assets/icons/phone.svg';
 
-export const ListItem = ({ name, website, email, phone, description}) => {
+export const ListItem = ({ name, location, address ,phone ,website ,email, phone, description }) => {
 	const [open, setOpen] = useState(false);
 
 	function handleClick() {
@@ -24,9 +24,12 @@ export const ListItem = ({ name, website, email, phone, description}) => {
                </div>
          </div>
 
-
          <div className="text">
                <pre>
+               Indirizzo: {address} , {location}
+               Telefono: {phone}
+               Email: {email}
+               Website: {website}
                {description}
                </pre>
             <br/>
