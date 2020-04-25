@@ -80,8 +80,8 @@ function parseActivity(data) {
             description: getRowValue(row, 7),
             website: getRowValue(row, 8),
             facebook: getRowValue(row, 9),
-            open: getRowValue(row, 10),
-            delivery: getRowValue(row, 11),
+            openTime: getRowValue(row, 10),
+            homeDelivery: getRowValue(row, 11),
         };
     });
     
