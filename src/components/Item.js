@@ -27,10 +27,10 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
 
          <div className="text">
             <pre>
-               Indirizzo: {address} , {location}
-               Telefono: {phone} {emailCheck} {websiteCheck}
-               <p>⏱️ Apertura: {open}</p>
-               <p><bold>🚚 Consegna a domicilio:</bold> {homeDelivery}</p>
+               <p>🏠 Indirizzo: {address} ,{location}</p>
+               <p>{phoneCheck} {emailCheck} {websiteCheck}</p>
+               <p>{openTime}</p>
+               <p><strong>🚚 Consegna a domicilio:</strong> {homeDelivery}</p>
                <p>
                   {description}
                </p>
@@ -49,5 +49,14 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
    function emailCheck() {
       return email != null ? `Email: ${email}` : '';
    }
+
+   function phoneCheck() {
+      return phone != null ? `Telefono: ${phone}` : '';
+   }
+
+   function openTime() {
+      return open != null ? `⏱️ Apertura: ${open}` : '';
+   }
+
 };
 
