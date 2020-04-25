@@ -41,12 +41,13 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
          <button onClick={handleClick} className="switcher">{open ? 'Chiudi la descrizione' : 'Leggi la descrizione'}</button>
       </div>
    );
+
+   function websiteCheck() {
+      return website != null ? `Website: ${website}` : '';
+   }
+
+   function emailCheck() {
+      return email != null ? `Email: ${email}` : '';
+   }
 };
 
-function websiteCheck() {
-   return website != null ? `Website: ${website}` : '';
-}
-
-function emailCheck() {
-   return email != null ? `Email: ${email}` : '';
-}
