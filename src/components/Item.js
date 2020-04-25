@@ -3,7 +3,7 @@ import iconWeb from '../assets/icons/web.svg';
 import iconMail from '../assets/icons/mail.svg';
 import iconPhone from '../assets/icons/phone.svg';
 
-export const ListItem = ({ name, location, address ,phone ,website ,email, phone, description,open,delivery }) => {
+export const ListItem = ({ name, location, address ,phone , website, email, phone, description, open, delivery }) => {
 	const [open, setOpen] = useState(false);
 
 	function handleClick() {
