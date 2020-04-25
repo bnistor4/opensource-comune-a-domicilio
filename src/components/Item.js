@@ -27,7 +27,7 @@ export const ListItem = ({ name, location, address, phone, website, email, descr
 
          <div className="text">
             <pre>
-               <p>🏠 Indirizzo: {address} ,{location}</p>
+               <p>🏠 Indirizzo: {address} - {location}</p>
                <p>{phoneCheck} {emailCheck} {websiteCheck}</p>
                <p>{openTime}</p>
                <p><strong>🚚 Consegna a domicilio:</strong> {homeDelivery}</p>
