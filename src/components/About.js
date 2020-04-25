@@ -18,8 +18,8 @@ export const About = () => {
                 <div className={'content'}>
                     <p>
                         👋 Sono Bogdan, ho implementato il progetto dei ragazzi del team di Fiumicino App per il comune di Ladispoli.
-                        Rigrazio i ragazzi per il grande lavoro fatto e spero possa essere utile alle attività locali.
-                        Qui sotto trovate il messaggio originale dei ragazzi.
+                        <p> 👏🏻 Rigrazio i ragazzi per il grande lavoro fatto e spero possa essere utile alle attività locali.</p>
+                        🌟 Qui sotto trovate il messaggio originale dei ragazzi. 🌟
                     </p>
                     <p>
                         👋 Siamo un gruppo di ragazzi che vivono a Fiumicino e che hanno a cuore la propria città.
