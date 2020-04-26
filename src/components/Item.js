@@ -30,11 +30,7 @@ export const ListItem = ({
       <div className="flex justify-between items-center">
         <h2>{name}</h2>
         <div className="meta">
-          <a
-            href={website != null ? website : ""}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={website != null ? website : ""} target="_blank" rel="noopener noreferrer" >
             <img alt="" className="icon" src={iconWeb} />
           </a>
           <a href={email != null ? `mailto:${email}` : ""}>
@@ -55,12 +51,7 @@ export const ListItem = ({
           <p> {website != null ? "🌐 Website: " + website : ""} </p>
           <p> {email != null ? "📧 Email: " + email : ""} </p>
           <p> {openTime != null ? "⏱️ Orari Apertura: " + openTime : ""} </p>
-          <p>
-            {" "}
-            {paymentType != null
-              ? "💳 Pagamenti accettati: " + paymentType
-              : ""}{" "}
-          </p>
+          <p> {paymentType != null ? "💳 Pagamenti accettati: " + paymentType : ""}</p>
           <p>
             <strong>🚚 Consegna a domicilio:</strong> {homeDelivery}
           </p>
