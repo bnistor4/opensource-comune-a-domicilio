@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Work+Sans:wght@400;600;700&display=swap");
 
 /* Layout */
 .container {
@@ -9,9 +9,9 @@
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,24 +21,26 @@ body {
 
 /* Typography */
 h1 {
-  font-family: 'Ubuntu', 'sans-serif';
+  font-family: "Ubuntu", "sans-serif";
   font-size: 24px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #171818; text-transform: capitalize;
+  color: #171818;
+  text-transform: capitalize;
 }
 h2 {
-  font-family: 'Ubuntu', 'sans-serif';
+  font-family: "Ubuntu", "sans-serif";
   font-size: 20px;
   font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #171818; text-transform: capitalize;
+  color: #171818;
+  text-transform: capitalize;
 }
 pre {
   font-size: 16px;
@@ -48,23 +50,22 @@ pre {
   line-height: 1.56;
   letter-spacing: normal;
   color: #353f43;
-  font-family: 'Open Sans', 'sans-serif';
+  font-family: "Open Sans", "sans-serif";
   word-break: break-word;
   white-space: pre-line;
 }
 p {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-
 
 /* Material Override */
 .MuiButton-label {
   text-transform: initial !important;
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
 }
 .MuiButton-containedSecondary {
   box-shadow: none !important;
@@ -73,18 +74,17 @@ code {
   box-shadow: none !important;
   text-transform: initial !important;
   border-radius: 6px !important;
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
   font-size: 16px !important;
   font-weight: 500 !important;
 }
 .MuiInputBase-input {
-  font-family: 'WorkSans', sans-serif !important;
-
+  font-family: "WorkSans", sans-serif !important;
 }
 
 /* Buttons */
 .btn {
-  font-family: 'Ubuntu', 'sans-serif';
+  font-family: "Ubuntu", "sans-serif";
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
@@ -123,7 +123,7 @@ code {
     flex-direction: column;
     .main-logo {
       font-size: 30px;
-      font-family: 'Ubuntu', 'sans-serif';
+      font-family: "Ubuntu", "sans-serif";
       font-weight: bolder;
       color: #0e9edd;
     }
@@ -191,6 +191,9 @@ code {
           margin-left: 20px;
         }
       }
+      .descriptionInfo {
+        margin-top: 5px;
+      }
       .text {
         margin-top: 17px;
         overflow: hidden;
@@ -206,11 +209,21 @@ code {
         line-height: 1.79;
         letter-spacing: normal;
         color: #0c9edd;
-        font-family: 'Open Sans', 'sans-serif';
-        text-decoration: underline;
+        font-family: "Open Sans", "sans-serif";
+        //text-decoration: underline;
+        text-decoration: none;
+
+        display: inline-block;
+        padding: 0.3em 1.2em;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 2em;
+        box-sizing: border-box;
+        color: #ffffff;
+        background-color: #4eb5f1;
+        text-align: center;
 
         &:before {
-          content: '';
+          content: "";
           width: 18px;
           height: 18px;
           background-image: url("./assets/icons/chevron.svg");
@@ -250,7 +263,7 @@ code {
   p {
     margin: auto;
     opacity: 0.8;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -263,7 +276,6 @@ code {
     a {
       color: #353f43;
     }
-
   }
 }
 
@@ -298,7 +310,7 @@ code {
     display: flex;
     justify-content: center;
     .content {
-      font-family: 'Work Sans', sans-serif;
+      font-family: "Work Sans", sans-serif;
       font-size: 18px;
       font-weight: normal;
       font-stretch: normal;
@@ -307,10 +319,9 @@ code {
       letter-spacing: normal;
       color: #353f43;
 
-       p {
-         margin: 20px 0;
-       }
-
+      p {
+        margin: 20px 0;
+      }
     }
 
     .buttons {
@@ -318,14 +329,13 @@ code {
       margin-top: 50px;
       .InfoButton {
         margin-bottom: 14px;
-
       }
     }
   }
 }
 
 /* Media Query */
-@media(max-width: 1024px) {
+@media (max-width: 1024px) {
   .mobile-only {
     display: block;
   }
@@ -381,16 +391,12 @@ code {
         margin: auto;
         .InfoButton {
           margin: 30px 10px;
-
         }
       }
     }
   }
 
-
   footer.App-footer {
     padding: 16px 0 35px;
-
   }
-
 }
