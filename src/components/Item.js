@@ -31,11 +31,7 @@ export const ListItem = ({
         <h2>{name}</h2>
         <div className="meta">
           <a
-            href={
-              website != null
-                ? website
-                : "https://ladispoliadomicilio.netlify.app"
-            }
+            href={website != null ? website : ""}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -50,13 +46,7 @@ export const ListItem = ({
           >
             <img alt="" className="icon" src={iconMail} />
           </a>
-          <a
-            href={
-              phone != null
-                ? `tel:${phone}`
-                : "https://ladispoliadomicilio.netlify.app"
-            }
-          >
+          <a href={phone != null ? `tel:${phone}` : ""}>
             <img alt="" className="icon" src={iconPhone} />
           </a>
         </div>
