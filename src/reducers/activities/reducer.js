@@ -80,6 +80,7 @@ function parseActivity(data) {
       paymentType: getRowValue(row, 10),
       openTime: getRowValue(row, 11),
       homeDelivery: getRowValue(row, 12),
+      minOrder: getRowValue(row, 13),
     };
   });
 

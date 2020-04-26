@@ -17,6 +17,7 @@ export const ListItem = ({
   openTime,
   homeDelivery,
   paymentType,
+  minOrder,
   facebook,
 }) => {
   const [open, setOpen] = useState(false);
@@ -67,6 +68,7 @@ export const ListItem = ({
           <p> {email != null ? "📧 Email: " + email : ""} </p>
           <p> {openTime != null ? "⏱️ Orari Apertura: " + openTime : ""} </p>
           <p> {paymentType != null ? "💳 Pagamenti accettati: " + paymentType : ""}</p>
+          <p> {minOrder != null ? "💶 Ordine minimo: " + minOrder : ""}</p>
           <p>
             <strong>🚚 Consegna a domicilio:</strong> {homeDelivery}
           </p>
