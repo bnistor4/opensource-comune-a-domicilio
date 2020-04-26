@@ -37,13 +37,7 @@ export const ListItem = ({
           >
             <img alt="" className="icon" src={iconWeb} />
           </a>
-          <a
-            href={
-              email != null
-                ? `mailto:${email}`
-                : "https://ladispoliadomicilio.netlify.app"
-            }
-          >
+          <a href={email != null ? `mailto:${email}` : ""}>
             <img alt="" className="icon" src={iconMail} />
           </a>
           <a href={phone != null ? `tel:${phone}` : ""}>
